@@ -99,6 +99,24 @@
 @keyframes iconBtnTap{0%{transform:scale(1)}35%{transform:scale(0.82)}70%{transform:scale(1.12)}100%{transform:scale(1)}}
 .icon-btn-tap{animation:iconBtnTap 0.32s cubic-bezier(0.36,0.07,0.19,0.97) forwards!important}
 </style>
+<!-- AdsTerra Social Bar -->
+<style>
+/* Ensure Social Bar stays on top without affecting game layout */
+body > *[class*="social"],
+body > *[id*="social"],
+body > div[style*="position: fixed"][style*="top: 0"],
+body > div[style*="position:fixed"][style*="top:0"] {
+  z-index: 2147483640 !important;
+}
+/* Protect canvas and all game elements from being shifted */
+canvas, #ui, #menu, #loader, #win, #lose, #shop,
+#settings, #daily-screen, #mission-screen, #profile-screen,
+#exchange-screen, #lb-screen, #wallpaper-screen {
+  top: 0 !important;
+  pointer-events: auto !important;
+  touch-action: manipulation !important;
+}
+</style>
 <script src="https://pl28712500.effectivegatecpm.com/cd/97/95/cd9795a3985591601d322ccdbd9f3dc3.js"></script>
 </head>
 <body>
